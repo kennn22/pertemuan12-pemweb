@@ -2,7 +2,7 @@
 import { Head, Link } from '@inertiajs/vue3';
 import { onMounted, ref } from "vue";
 import { LottieAnimation } from "lottie-web-vue";
-import WatermelonJSON from "/public/img/robot.json";
+import WatermelonJSON from "/public/img/robot2.json";
 
 // Menginisialisasi variabel anim sebagai referensi Vue
 let anim = ref();
@@ -55,8 +55,8 @@ const props = defineProps({
     <nav class="bg-white">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
-                <img src="img/logo_Web.png" class="h-8 mr-3" alt=" Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Dosen AI</span>
+                <img src="img/adidas.png" class="h-8 mr-3" alt=" Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Mahasiswa AI</span>
             </a>
             <div class="flex md:order-2">
                 <div v-if="canLogin">
@@ -92,22 +92,22 @@ const props = defineProps({
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">About</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">Services</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">Pricing</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#about"
                             class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-dark md:dark:hover:bg-transparent">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-blue-900">
         <div class="py-1 px-4 mx-auto max-w-screen-xl  lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div class="flex flex-col justify-center">
                 <h1
@@ -125,12 +125,12 @@ const props = defineProps({
                         </svg>
                     </a>
                     <a href="#"
-                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-green-300 hover:bg-green-100 focus:ring-4 focus:ring-green-100 dark:text-white dark:border-green-700 dark:hover:bg-green-700 dark:focus:ring-green-800">
                         Learn more </a>
                 </div>
             </div>
             <div>
-                <LottieAnimation :animation-data="WatermelonJSON" :auto-play="true" :height="100" :loop="true" :speed="1"
+                <LottieAnimation :animation-data="WatermelonJSON" :auto-play="true" :height="100" :loop="true" :speed="2"
                     ref="anim" />
             </div>
         </div>
@@ -144,7 +144,7 @@ const props = defineProps({
                 <p class="pt-6 font-body leading-relaxed text-grey-20">{{ about.konten }}</p>
                 <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
                     <div class="flex items-center justify-center sm:justify-start">
-                        <a href="https://www.instagram.com/mujiyantosvc/"
+                        <a href="https://www.instagram.com/kenedi.fp/"
                             class="font-body text-lg font-semibold uppercase text-grey-20"> Connect with me </a>
                         <div class="hidden sm:block">
                             <i class="bx bx-chevron-right text-2xl text-primary"></i>
@@ -176,7 +176,7 @@ const props = defineProps({
                         <h3 class="font-body text-3xl font-bold text-primary">{{ item.konten }}%</h3>
                     </div>
                     <div class="mt-2 bg-lila w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: {{item.konten}}%"></div>
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: {{item.konten}}%"></div>
                     </div>
                 </div>
             </div>
@@ -190,8 +190,8 @@ const props = defineProps({
                         <Logo />
                     </div>
                     <div className="text-sm text-gray-600">
-                        <img src="img/logo_Web.png" class="h-8 mr-3" alt=" Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Dosen AI</span>
+                        <img src="img/adidas.png" class="h-12 mr-3" alt=" Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark"></span>
                     </div>
                 </div>
                 <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">

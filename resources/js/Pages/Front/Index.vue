@@ -55,7 +55,7 @@ const props = defineProps({
     <nav class="bg-white">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="/" class="flex items-center">
-                <img src="img/adidas.png" class="h-8 mr-3" alt=" Logo" />
+                <img src="img/nirvana.png" class="h-8 mr-3" alt=" Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark">Mahasiswa AI</span>
             </a>
             <div class="flex md:order-2">
@@ -107,7 +107,7 @@ const props = defineProps({
             </div>
         </div>
     </nav>
-    <section class="bg-white dark:bg-blue-900">
+    <section class="bg-white dark:bg-sky-900">
         <div class="py-1 px-4 mx-auto max-w-screen-xl  lg:py-16 grid lg:grid-cols-2 gap-12 lg:gap-16">
             <div class="flex flex-col justify-center">
                 <h1
@@ -146,6 +146,7 @@ const props = defineProps({
                     <div class="flex items-center justify-center sm:justify-start">
                         <a href="https://www.instagram.com/kenedi.fp/"
                             class="font-body text-lg font-semibold uppercase text-grey-20"> Connect with me </a>
+                            <br>
                         <div class="hidden sm:block">
                             <i class="bx bx-chevron-right text-2xl text-primary"></i>
                         </div>
@@ -190,7 +191,7 @@ const props = defineProps({
                         <Logo />
                     </div>
                     <div className="text-sm text-gray-600">
-                        <img src="img/adidas.png" class="h-12 mr-3" alt=" Logo" />
+                        <img src="img/nirvana.png" class="h-12 mr-3" alt=" Logo" />
                         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-dark"></span>
                     </div>
                 </div>
